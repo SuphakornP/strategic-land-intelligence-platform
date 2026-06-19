@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["node", "vitest/globals"]
+  },
+  "include": [
+    "src/domain/**/*.ts",
+    "src/application/**/*.ts",
+    "src/infrastructure/**/*.ts",
+    "src/shared/**/*.ts",
+    "src/test/**/*.ts",
+    "vitest.domain.config.ts"
+  ],
+  "exclude": ["src/presentation/**", "src/App.tsx", "src/main.tsx"]
+}
